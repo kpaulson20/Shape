@@ -12,15 +12,14 @@ namespace Shape
         private double _radius;
         private double DefaultRadius = 0;
         public static int objectsAlive = 0;
-        private double onlySeenHere;
-
+        //private double onlySeenHere;
         public double Radius { get; set; }
 
         public Circle()
         {
             objectsAlive++;
             _radius = DefaultRadius;
-            Console.WriteLine("A square with default radius of " + _radius + " was created");
+            Console.WriteLine("A circle with default radius of " + _radius + " was created");
         }
         //parameterized constructor
         public Circle(double radius)
@@ -34,17 +33,10 @@ namespace Shape
         {
             _radius = c.Radius;
         }
-        //deconstructor
-        ~Circle()
-        {
-            objectsAlive--;
-            onlySeenHere = 5;
-            Console.WriteLine("Destroying circle with a radius of " + _radius);
-        }
         //calculate area
         public double calcArea()
         {
-            return Math.PI * Math.Pow(_radius, 2);
+            return Math.PI * Math.Pow (_radius, 2);
         }
         //calulate perimeter
         public double calcPerimeter()

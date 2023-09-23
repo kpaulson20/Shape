@@ -14,12 +14,9 @@ namespace Shape
         private double DefaultHeight = 0;
         private double DefaultWidth = 0;
         public static int objectsAlive = 0;
-
-        private Rectangle _rectangle;
-        private double onlySeenHere;
+        //private double onlySeenHere;
 
         //properties
-        //public Color Color { get; set; }
         public double Height { get; set; }
         public double Width { get; set; }
 
@@ -44,13 +41,6 @@ namespace Shape
         {
             _height = r.Height;
             _width = r.Width;
-        }
-        //deconstructor
-        ~Rectangle()
-        {
-            objectsAlive--;
-            onlySeenHere = 5;
-            Console.WriteLine("Destroying Rectangle with height " + _height + " and width " + _width);
         }
         //calculate area
         public double calcArea()

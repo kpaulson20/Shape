@@ -13,7 +13,7 @@ namespace Shape
         private double sideLength;
         private double DefaultLength = 0;
         public static int objectsAlive = 0;
-        private double onlySeenHere;
+        //private double onlySeenHere;
 
         public double Length { get; set; }
 
@@ -35,21 +35,16 @@ namespace Shape
         {
             sideLength = s.Length;
         }
-        //deconstructor
-        ~Square()
-        {
-            objectsAlive--;
-            onlySeenHere = 5;
-            Console.WriteLine("Destroying square with side length " + sideLength);
-        }
         //calculate area
         public double calcArea()
         {
-            return Math.Pow(sideLength, 2);
+            return sideLength * sideLength;
+            Console.WriteLine("The area of a square with side length " + sideLength + " is "); //Square.calcArea());
         }
         //calulate perimeter
         public double calcPerimeter()
         {
+            Console.WriteLine("The perimeter of a square with side lenght " + sideLength + " is ");
             return 4 * sideLength;
         }
     }
