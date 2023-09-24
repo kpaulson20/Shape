@@ -39,12 +39,10 @@ namespace Shape
         public double calcArea()
         {
             return sideLength * sideLength;
-            Console.WriteLine("The area of a square with side length " + sideLength + " is "); //Square.calcArea());
         }
         //calulate perimeter
         public double calcPerimeter()
         {
-            Console.WriteLine("The perimeter of a square with side lenght " + sideLength + " is ");
             return 4 * sideLength;
         }
     }

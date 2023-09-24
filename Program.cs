@@ -14,30 +14,50 @@ namespace Shape
         {
             var s = "System";
 
-            //var def = new Rectangle();
+            var def = new Rectangle();
             var rct = new Rectangle(3, 7);
-            //var rct1 = new Rectangle(4, 8);
-            //var diffRectangle = new Rectangle(5, 4);
+            Console.WriteLine("Area = " + rct.calcArea() + "    Perimeter = " + rct.calcPerimeter());
+            Console.WriteLine();
 
-            //var def2 = new Square();
+            var rct1 = new Rectangle(4, 8);
+            Console.WriteLine("Area = " + rct1.calcArea() + "   Perimeter = " + rct1.calcPerimeter());
+            Console.WriteLine();
+
+            var def2 = new Square();
             var sqr = new Square(5);
-            //var sqr1 = new Square(8);
-            //var diffSquare = new Square(3);
+            Console.WriteLine("Area = " + sqr.calcArea() + "   Perimeter = " + sqr.calcPerimeter());
+            Console.WriteLine();
 
-            //var def3 = new Circle();
+            var sqr1 = new Square(8);
+            Console.WriteLine("Area = " + sqr1.calcArea() + "   Perimeter = " + sqr1.calcPerimeter());
+            Console.WriteLine();
+
+            var def3 = new Circle();
             var circ = new Circle(2);
-            //var circ1 = new Circle(7);
-            //var diffCircle = new Circle(9);
+            Console.WriteLine("Area = " + circ.calcArea() + "   Perimeter = " + circ.calcPerimeter());
+            Console.WriteLine();
 
-            //var def4 = new Ellipse(3, 5);
-            var ellipse = new Ellipse(2, 6);
-            //var ellipse1 = new Ellipse(4, 7);
-            //var diffEllipse = new Ellipse(5, 9);
+            var circ1 = new Circle(7);
+            Console.WriteLine("Area = " + circ1.calcArea() + "   Perimeter = " + circ1.calcPerimeter());
+            Console.WriteLine();
 
-            //var def5 = new Pentagon();
+            var def4 = new Ellipse();
+            var ellipse = new Ellipse(6, 2);
+            Console.WriteLine("Area = " + ellipse.calcArea() + "   Perimeter = " + ellipse.calcPerimeter());
+            Console.WriteLine();
+
+            var ellipse1 = new Ellipse(4, 7);
+            Console.WriteLine("Area = " + ellipse1.calcArea() + "   Perimeter = " + ellipse1.calcPerimeter());
+            Console.WriteLine();
+
+            var def5 = new Pentagon();
             var pent = new Pentagon(4);
-            //var pent1 = new Pentagon(6);
-            //var diffPentagon = new Pentagon(3);
+            Console.WriteLine("Area = " + pent.calcArea() + "   Perimeter = " + pent.calcPerimeter());
+            Console.WriteLine();
+
+            var pent1 = new Pentagon(6);
+            Console.WriteLine("Area = " + pent1.calcArea() + "   Perimeter = " + pent1.calcPerimeter());
+            Console.WriteLine();
         }
     }
 }

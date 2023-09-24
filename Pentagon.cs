@@ -10,9 +10,7 @@ namespace Shape
     {
         //declarations
         private double _side;
-        private double _apothem;
         private double DefaultSide = 0;
-        private double DefaultApothem = 0;
         public static int objectsAlive = 0;
         //private double onlySeenHere;
         public double Length { get; set; }
@@ -22,8 +20,7 @@ namespace Shape
         {
             objectsAlive++;
             _side = DefaultSide;
-            _apothem = DefaultApothem;
-            Console.WriteLine("A pentagon with default side length and apothem length of " + _side + " was created");
+            Console.WriteLine("A pentagon with default side length of " + _side + " was created");
         }
         //parameterized
         public Pentagon(double side)
@@ -40,7 +37,7 @@ namespace Shape
 
         public double calcArea()
         {
-            return (5 * _side * _apothem) / 2;
+            return 0.25 * Math.Sqrt(5 * (5 + 2*Math.Sqrt(5))) * Math.Pow(_side, 2);
         }
         public double calcPerimeter()
         {

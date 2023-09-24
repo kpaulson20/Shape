@@ -9,8 +9,8 @@ namespace Shape
     internal class Ellipse
     {
         //declarations
-        private double _SemiMajor;
-        private double _SemiMinor;
+        private double _SemiMajor; //a
+        private double _SemiMinor; //b
         private double DefaultSemiMajor = 0;
         private double DefaultSemiMinor = 0;
         public static int objectsAlive = 0;
@@ -45,7 +45,8 @@ namespace Shape
         }
         public double calcPerimeter()
         {
-            return Math.PI * (3 * (_SemiMajor + _SemiMinor)) - Math.Sqrt((3 * _SemiMajor) + _SemiMinor) * (_SemiMajor + (3 * _SemiMinor));
+            return Math.PI * ((3 * (_SemiMajor + _SemiMinor)) - 
+                Math.Sqrt(((3 * _SemiMajor) + _SemiMinor) * (_SemiMajor + (3 * _SemiMinor))));
         }
     }
 }
